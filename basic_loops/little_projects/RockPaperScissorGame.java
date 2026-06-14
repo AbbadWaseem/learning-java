@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
-public class KnightIsBack{
+
+public class RockPaperScissorGame{
   public static void main (String[] args){
     Scanner ck=new Scanner(System.in);
     Random tt=new Random();
