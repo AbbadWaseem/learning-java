@@ -2,7 +2,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class NumberGuessGame {
     public static void main(String[] args) {
       Random rn=new Random();
       Scanner sn=new Scanner(System.in);
