@@ -1,5 +1,3 @@
-//In Future: at last user can see the result all together in a 3 match tournament
-
 import java.util.Random;
 import java.util.Scanner;
 
@@ -12,6 +10,8 @@ public class RockPaperScissorGame{
       int rr=tt.nextInt(0,12);
       int lk=ck.nextInt();
       int pp=0;    
+      int user=0;
+      int system=0;
       switch (rr) {
         case 7,0,1,2:
           pp=31;
@@ -21,9 +21,7 @@ public class RockPaperScissorGame{
           break;
         case 3,8,9,10:
           pp=33;
-          break;
-        default:
-          System.out.println("Dhang se lihk");    
+          break;  
       }
       int ww=0;
       switch (lk) {
@@ -37,17 +35,22 @@ public class RockPaperScissorGame{
           ww=33;
           break;
         default:
-          System.out.println("Dhang se lihk");
+          System.out.println("Enter a valid number");
           System.exit(0);
       }
       if (ww==pp){
         System.out.println("Tie");
+        user=user+1;
+        system=system+1;
+
       }
       else if (((ww-pp)==1) || ((ww-pp)==-2)){
         System.out.println("User won");
+        user=user+1;
       }
       else {
         System.out.println("System won");
+        system=system+1;
       }
 
       String syst="shutdown";
@@ -74,8 +77,9 @@ public class RockPaperScissorGame{
           inpu="Scissor";
           break;  
       }
-      System.out.printf("This was chosen by User : %s\nThis was chosen by System : %s%n",inpu,syst);
+      System.out.printf("This was chosen by User : %s\nThis was chosen by System : %s%n%n",inpu,syst);
     }
+
     System.exit(0);
   }
 }
