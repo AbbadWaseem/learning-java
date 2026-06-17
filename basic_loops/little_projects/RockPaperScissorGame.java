@@ -5,13 +5,14 @@ public class RockPaperScissorGame{
   public static void main (String[] args){
     Scanner ck=new Scanner(System.in);
     Random tt=new Random();
+    int user=0;
+    int system=0;
     for(int q=-3;q<0;q++){
       System.out.println("Enter a number from 0 to 11");
       int rr=tt.nextInt(0,12);
       int lk=ck.nextInt();
       int pp=0;    
-      int user=0;
-      int system=0;
+
       switch (rr) {
         case 7,0,1,2:
           pp=31;
@@ -79,6 +80,7 @@ public class RockPaperScissorGame{
       }
       System.out.printf("This was chosen by User : %s\nThis was chosen by System : %s%n%n",inpu,syst);
     }
+    System.out.printf("Total Points : %n  User: %d%n  System:%d%n",user,system);
 
     System.exit(0);
   }
