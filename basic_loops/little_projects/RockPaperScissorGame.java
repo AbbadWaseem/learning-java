@@ -82,6 +82,27 @@ public class RockPaperScissorGame{
     }
     System.out.printf("Total Points : %n  User: %d%n  System:%d%n",user,system);
 
+    //Will compact this upcoming snippet of code  
+    if (user>system){
+      if((user-system)==1){
+        System.out.printf("Congratulations you won the game by 1 point !!");
+      }
+      else{
+        System.out.printf("Congratulations you won the game by %d points !!",user-system);
+      }
+    } 
+    else if(user==system){
+      System.out.printf("No worries the game tied");
+    }
+   else {
+      if((system-user)==1){
+        System.out.printf("The system won the game by 1 point");
+      }
+      else{
+        System.out.printf("The system won the game by %d points",system-user);
+      }
+    } 
+
     System.exit(0);
   }
 }
