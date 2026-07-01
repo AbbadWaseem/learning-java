@@ -1,4 +1,3 @@
-import java.util.Arrays;
 public class MatrixAdd{
   public static void main (String[] args){
     int[][] matric = {{1, 2, 4}, {2, 4, 8}};
